@@ -60,3 +60,76 @@ button {
     border-radius: 2px;
     cursor: pointer;
 }
+
+/*------------------------*/
+/* Nav Section with Hero */
+/*------------------------*/
+
+.main-head {
+    color: #fff;
+    background: #131c27;
+}
+
+nav {
+    min-height: 10vh;
+    padding: 2rem;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+nav ul {
+    display: flex;
+    flex: 1 1 40rem;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#logo {
+    font-family: 'Pattaya', sans-serif;
+    font-weight: 400;
+    flex: 2 1 40rem;
+}
+
+.hero {
+    min-height: 90vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), transparent), url('./img/landing-page.jpg');
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero h3 {
+    padding: 5rem;
+}
+
+/*------------------------*/
+/* Media Queries */
+/*------------------------*/
+
+@media screen and (max-width: 933px) {
+    html {
+        font-size: 45%;
+    }
+}
+
+@media screen and (max-width: 671px) {
+    .hero {
+        padding: 2rem;
+    }
+
+    nav {
+        text-align: center;
+    }
+
+    #logo {
+        padding-bottom: 2rem;
+    }
+}
