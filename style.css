@@ -216,17 +216,19 @@ nav ul {
     }
 }
 
-@media screen and (max-width: 671px) {
-    .hero {
-        padding: 2rem;
-    }
-
+@media screen and (max-width: 746px) {
     nav {
         text-align: center;
     }
 
     #logo {
         padding-bottom: 2rem;
+    }
+}
+
+@media screen and (max-width: 671px) {
+    .hero {
+        padding: 2rem;
     }
 
     .locations-head h2 {
