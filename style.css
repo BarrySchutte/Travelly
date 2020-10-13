@@ -66,6 +66,10 @@ button:hover {
     background: #27394e;
 }
 
+input:required {
+    box-shadow: none;
+}
+
 /*------------------------*/
 /* Nav Section with Hero */
 /*------------------------*/
@@ -234,6 +238,88 @@ nav ul {
 }
 
 /*------------------------*/
+/* Contact Section */
+/*------------------------*/
+
+#contact {
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), transparent), url('./img/contact-mountain.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-wrapper {
+    background: rgba(19, 28, 39, 0.8);
+    width: 50%;
+    color: #fff;
+    border-radius: 20px;
+}
+
+.form-head {
+    text-align: center;
+    padding: 4rem;
+}
+
+.name-form,
+.email-form {
+    padding: 3rem;
+    text-align: center;
+}
+
+.form-wrapper label {
+    margin: 0rem 2rem;
+}
+
+.form-wrapper button {
+    width: 100%;
+    padding: 2rem;
+    margin-top: 8rem;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.form-wrapper input {
+    width: 60%;
+    padding: 1rem 2rem;
+}
+
+/*------------------------*/
+/* Footer */
+/*------------------------*/
+
+footer {
+    color: #fff;
+    background: rgba(19, 28, 39, 1);
+}
+
+.footer-wrapper {
+    display: flex;
+    padding: 2rem;
+    width: 90%;
+    margin: auto;
+    align-items: center;
+    min-height: 10vh;
+}
+
+footer h5 {
+    flex: 8 1 40rem;
+}
+
+footer ul {
+    display: flex;
+    flex: 1 1 40rem;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+footer ul li {
+    margin: 0 1.5rem;
+}
+
+/*------------------------*/
 /* Media Queries */
 /*------------------------*/
 
@@ -278,6 +364,11 @@ nav ul {
     .card h4 {
         font-size: 3.1rem;
     }
+
+    .form-wrapper input {
+        width: 90%;
+        margin-top: 1rem;
+    }
 }
 
 @media screen and (max-width: 746px) {
@@ -310,6 +401,10 @@ nav ul {
 }
 
 @media screen and (max-width: 560px) {
+    html {
+        font-size: 45%;
+    }
+
     .cards {
         width: 100%;
         padding: 1rem;
@@ -317,5 +412,9 @@ nav ul {
 
     .card {
         margin: 1rem;
+    }
+
+    .form-wrapper {
+        width: 90%;
     }
 }
